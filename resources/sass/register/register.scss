@@ -1,21 +1,71 @@
 
-.cover{
-  min-height:388px;
-  max-height: 388px;
-  background: linear-gradient(281deg,#0EBEFA,#196DDD);
-}
-.customNav{
-   .navbar-nav{
-        ul{
-          li{
-            a{
-              color:#fff;
-            }
-          }
+.header{
+  .nav-container{
+    background: linear-gradient(281deg, #0EBEFA, #196DDD);
+  }
+  .cover{
+    min-height: 388px;
+    max-height: 388px;
+    background: linear-gradient(281deg, #0EBEFA, #196DDD);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .tutorSignUp{
+      font-size:32px;
+      color: #fff;
+    }
+  }
+  .customNav{
+    .navbar-brand{
+      color:#fff!important;
+    }
+    .navbar-nav{
+      margin-top: 10px;
+      li{
+        a{
+          color:#fff!important;
+          margin-right: 22px!important;
         }
+      }
+      .cusButton{
+        border-radius: 17px;
+        color: #fff;
+        background: transparent!important;
+        border: 1px solid #fff!important;
+      }
     }
 
+  }
 }
+.footer{
+   background: #222642;
+  padding: 50px 0;
+  .footerItem{
+      .foorerItemHead{
+        color: #A7ADD8;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      .footerHead{
+        font-size:14px;
+        color:#fff;
+      }
+      .itemList{
+        padding: 0;
+        li{
+          list-style: none;
+          a{
+            color: #61678C;
+            font-size: 14px;
+            text-decoration: none;
+
+          }
+        }
+      }
+  }
+}
+
 
 @import "step1";
 @import "step2";
