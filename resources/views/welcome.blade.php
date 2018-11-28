@@ -11,11 +11,9 @@
     </head>
     <body>
 
-    {{--<div id="app">--}}
-        {{--it will be header <br>--}}
-           {{--@yield('content')--}}
-        {{--it will be footer <br>--}}
-    {{--</div>--}}
+   <div id="app">
+   
+   </div>
     
     </body>
 </html>
