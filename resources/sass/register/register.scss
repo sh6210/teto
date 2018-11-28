@@ -4,6 +4,18 @@
   max-height: 388px;
   background: linear-gradient(281deg,#0EBEFA,#196DDD);
 }
+.customNav{
+   .navbar-nav{
+        ul{
+          li{
+            a{
+              color:#fff;
+            }
+          }
+        }
+    }
+
+}
 
 @import "step1";
 @import "step2";
