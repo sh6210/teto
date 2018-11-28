@@ -21,11 +21,6 @@
 						</li>
 						<li class="nav-item ">
 							<a class="nav-link" href="#">
-								FIND A TUTOR  <span class="sr-only">(current)</span>
-							</a>
-						</li>
-						<li class="nav-item ">
-							<a class="nav-link" href="#">
 								HOW IT WORKS <span class="sr-only">(current)</span>
 							</a>
 						</li>

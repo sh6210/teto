@@ -2,6 +2,12 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+ @font-face {
+    font-family: AvenirNextLTPro ;
+    src: url(/public/fonts/AvenirNextLTPro-Bold.otf);
+    src: url(/public/fonts/AvenirNextLTPro-It.otf);
+    src: url(/public/fonts/AvenirNextLTPro-Regular.otf);
+}
 
 // Variables
 @import 'variables';
@@ -9,6 +15,8 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 @import'./register/register';
+
+
 
 .navbar-laravel {
   background-color: #fff;
