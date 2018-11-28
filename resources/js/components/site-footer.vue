@@ -1,7 +1,6 @@
 <template>
 	<div>
-		im footer
-		
+	   footer
 	</div>
 </template>
 
