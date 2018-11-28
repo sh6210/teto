@@ -22,11 +22,12 @@
 <body>
 <div id="app">
     
-    <div class="container">
+    
+   
         @include('layouts.header')
         @yield('content')
         @include('layouts.footer')
-    </div>
+ 
     
 </div>
 </body>
