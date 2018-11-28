@@ -64,6 +64,23 @@
         }
       }
   }
+
+}
+.bottom-footer{
+  border-top: 1px solid #61678C ;
+  .footer-link-items{
+   li{
+     display: inline;
+     list-style: none;
+     padding-right: 15px;
+     a{
+       color: #61678C;
+       font-size: 12px;
+       text-decoration: none;
+
+     }
+   }
+  }
 }
 
 
