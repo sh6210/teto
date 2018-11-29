@@ -12,8 +12,6 @@ Vue.component('example-component', require('./components/ExampleComponent.vue'))
 Vue.component('site-header', require('./components/site-header.vue'));
 Vue.component('site-footer', require('./components/site-footer.vue'));
 Vue.component('register', require('./components/register/register.vue'));
-Vue.component('register', require('./components/register/register.vue'));
-
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -33,31 +31,38 @@ const app = new Vue({
             stepThree:false,
             stepFour:false,
             stepFive:false,
-            stepSix:false
+            stepSix:false,
+            stepCircleActiveTwo:false,
+            stepCircleActiveThree:false,
+            stepCircleActiveFour:false
         }
     },
     methods:{
         callSecondStepModal(){
-          this.stepTwo=true
+            this.stepTwo=true
         },
         callThirdStep(){
-             this.stepThree=true
-             this.stepTwo=false
-             this.stepOne=false
-             this.barActive=true
+            this.stepThree=true
+            this.stepTwo=false
+            this.stepOne=false
+            this.barActive=true
+            this.stepCircleActiveTwo=true
+
         },
         backSecondPage(){
             this.stepThree=false
             this.stepTwo=true
             this.stepOne=false
             this.barActiveTwo=false
+            this.stepCircleActiveTwo=false
         },
         backThirdPage(){
             this.stepThree=true
             this.stepTwo=false
             this.stepOne=false
             this.stepFour=false
-
+            this.barActiveTwo=false
+            this.stepCircleActiveThree=false
         },
         callFourStep(){
             this.stepFour=true
@@ -65,6 +70,7 @@ const app = new Vue({
             this.stepTwo=false
             this.stepOne=false
             this.barActiveTwo=true
+            this.stepCircleActiveThree=true
         },
         callFiveStep(){
 
@@ -74,6 +80,7 @@ const app = new Vue({
             this.stepTwo=false
             this.stepOne=false
             this.barActiveThree=true
+            this.stepCircleActiveFour=true
 
 
         },
@@ -85,15 +92,16 @@ const app = new Vue({
             this.stepTwo=false
             this.stepOne=false
             this.barActiveThree=false
+            this.stepCircleActiveFour=false
 
         },
         callSixStep(){
-               this.stepSix=true
-                this.stepOne=false
-                this.stepTwo=false
-                this.stepThree=false
-                this.stepFour=false
-                this.stepFive=false
+            this.stepSix=true
+            this.stepOne=false
+            this.stepTwo=false
+            this.stepThree=false
+            this.stepFour=false
+            this.stepFive=false
         },
         backMessege(){
             alert("You don't have any permission to go back ")

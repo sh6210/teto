@@ -1,66 +1,68 @@
 <template>
 	<div>
-			<div class="container">
-				<div class="col-md-2"></div>
-				<div class="col-md-8 mx-auto">
-					<div class="step-main-top">
-						<ul>
-							<li>
-								<div class="step-circle active">
-									<i class="far fa-user"></i>
-								</div>
-								<div>Personal Detail </div>
-								<div :class="{'bar':true, 'bar-active':$root.$data.barActive}"></div>
-							</li>
-							
-							<li>
-								<div class="step-circle">
-									<i class="far fa-newspaper"></i>
-									<!--<img src="/site-images/icons/qualification.PNG" alt="" class="img-responsive">-->
-								</div>
-								<div>Qualification</div>
-								<div :class="{'bar':true, 'bar-active':$root.$data.barActiveTwo}"></div>
-							</li>
-							<li>
-								<div class="step-circle">
-									<i class="fas fa-book"></i>
-								</div>
-								<div>Tutoring Subjects</div>
-								<div :class="{'bar':true, 'bar-active':$root.$data.barActiveThree}"></div>
-							</li>
-							<li>
-								<div class="step-circle">
-									<i class="far fa-credit-card"></i>
-								</div>
-								<div>Get Paid</div>
-							</li>
-						</ul>
-					</div>
-					<step1></step1>
-					<step2></step2>
-					<step3 :qualifications="Qualifications"></step3>
-					<step4></step4>
-					<step5></step5>
-					<step6></step6>
+		<div class="container">
+			<div class="col-md-2"></div>
+			<div class="col-md-8 mx-auto">
+				<div class="step-main-top">
+					<ul>
+						<li>
+							<div class="step-circle active">
+								<i class="far fa-user"></i>
+							</div>
+							<div>Personal Detail </div>
+							<div :class="{'bar':true, 'bar-active':$root.$data.barActive}"></div>
+						</li>
+
+						<li>
+							<div :class="{'step-circle':true,'active':$root.$data.stepCircleActiveTwo}">
+
+								<i class="far fa-newspaper"></i>
+								<!--<img src="/site-images/icons/qualification.PNG" alt="" class="img-responsive">-->
+							</div>
+							<div>Qualification</div>
+							<div :class="{'bar':true, 'bar-active':$root.$data.barActiveTwo}"></div>
+
+						</li>
+						<li>
+							<div :class="{'step-circle':true,'active':$root.$data.stepCircleActiveThree}">
+								<i class="fas fa-book"></i>
+							</div>
+							<div>Tutoring Subjects</div>
+							<div :class="{'bar':true, 'bar-active':$root.$data.barActiveThree}"></div>
+						</li>
+						<li>
+							<div :class="{'step-circle':true,'active':$root.$data.stepCircleActiveFour}">
+								<i class="far fa-credit-card"></i>
+							</div>
+							<div>Get Paid</div>
+						</li>
+					</ul>
 				</div>
-				<div class="col-md-2"></div>
+				<step1></step1>
+				<step2></step2>
+				<step3 :qualifications="qualifications"></step3>
+				<step4></step4>
+				<step5></step5>
+				<step6></step6>
 			</div>
+			<div class="col-md-2"></div>
+		</div>
 	</div>
 </template>
 
 <script>
-	import step1 from './partials/step1'
-	import step2 from './partials/step2'
-	import step3 from './partials/step3'
-	import step4 from './partials/step4'
-	import step5 from './partials/step5'
-	import step6 from './partials/step6'
+    import step1 from './partials/step1'
+    import step2 from './partials/step2'
+    import step3 from './partials/step3'
+    import step4 from './partials/step4'
+    import step5 from './partials/step5'
+    import step6 from './partials/step6'
     export default {
         name: "register",
-	    components:{step1, step2,step3,step4,step5,step6},
+        components:{step1, step2,step3,step4,step5,step6},
 		data(){
             return {
-                Qualifications:[]
+                qualifications:[]
 			}
 		}
     }
