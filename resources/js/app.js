@@ -13,7 +13,6 @@ Vue.component('site-header', require('./components/site-header.vue'));
 Vue.component('site-footer', require('./components/site-footer.vue'));
 Vue.component('register', require('./components/register/register.vue'));
 Vue.component('register', require('./components/register/register.vue'));
-Vue.component('array-input', require('./components/arrayInput.vue'));
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
