@@ -14,24 +14,22 @@
 							</li>
 							
 							<li>
-								<div :class="{'step-circle':true,'active':$root.$data.stepCircleActiveTwo}">
-									
+								<div class="step-circle">
 									<i class="far fa-newspaper"></i>
 									<!--<img src="/site-images/icons/qualification.PNG" alt="" class="img-responsive">-->
 								</div>
 								<div>Qualification</div>
 								<div :class="{'bar':true, 'bar-active':$root.$data.barActiveTwo}"></div>
-								
 							</li>
 							<li>
-								<div :class="{'step-circle':true,'active':$root.$data.stepCircleActiveThree}">
+								<div class="step-circle">
 									<i class="fas fa-book"></i>
 								</div>
 								<div>Tutoring Subjects</div>
 								<div :class="{'bar':true, 'bar-active':$root.$data.barActiveThree}"></div>
 							</li>
 							<li>
-								<div :class="{'step-circle':true,'active':$root.$data.stepCircleActiveFour}">
+								<div class="step-circle">
 									<i class="far fa-credit-card"></i>
 								</div>
 								<div>Get Paid</div>
@@ -40,7 +38,7 @@
 					</div>
 					<step1></step1>
 					<step2></step2>
-					<step3></step3>
+					<step3 :qualifications="Qualifications"></step3>
 					<step4></step4>
 					<step5></step5>
 					<step6></step6>
@@ -59,7 +57,12 @@
 	import step6 from './partials/step6'
     export default {
         name: "register",
-	    components:{step1, step2,step3,step4,step5,step6}
+	    components:{step1, step2,step3,step4,step5,step6},
+		data(){
+            return {
+                Qualifications:[]
+			}
+		}
     }
 </script>
 
