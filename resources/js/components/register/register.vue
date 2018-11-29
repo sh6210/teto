@@ -10,19 +10,24 @@
 									<i class="far fa-user"></i>
 								</div>
 								<div>Personal Detail </div>
+								<div :class="{'bar':true, 'bar-active':$root.$data.barActive}"></div>
 							</li>
+							
 							<li>
 								<div class="step-circle">
 									<i class="far fa-newspaper"></i>
 									<!--<img src="/site-images/icons/qualification.PNG" alt="" class="img-responsive">-->
 								</div>
 								<div>Qualification</div>
+								<div :class="{'bar':true, 'bar-active':$root.$data.barActiveTwo}"></div>
 							</li>
+							
 							<li>
 								<div class="step-circle">
 									<i class="fas fa-book"></i>
 								</div>
 								<div>Tutoring Subjects</div>
+								<div :class="{'bar':true, 'bar-active':$root.$data.barActiveThree}"></div>
 							</li>
 							<li>
 								<div class="step-circle">
@@ -34,6 +39,10 @@
 					</div>
 					<step1></step1>
 					<step2></step2>
+					<step3></step3>
+					<step4></step4>
+					<step5></step5>
+					<step6></step6>
 				</div>
 				<div class="col-md-2"></div>
 			</div>
@@ -43,9 +52,13 @@
 <script>
 	import step1 from './partials/step1'
 	import step2 from './partials/step2'
+	import step3 from './partials/step3'
+	import step4 from './partials/step4'
+	import step5 from './partials/step5'
+	import step6 from './partials/step6'
     export default {
         name: "register",
-	    components:{step1, step2}
+	    components:{step1, step2,step3,step4,step5,step6}
     }
 </script>
 
