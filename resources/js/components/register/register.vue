@@ -21,7 +21,6 @@
 								<div>Qualification</div>
 								<div :class="{'bar':true, 'bar-active':$root.$data.barActiveTwo}"></div>
 							</li>
-							
 							<li>
 								<div class="step-circle">
 									<i class="fas fa-book"></i>

@@ -71,6 +71,7 @@ const app = new Vue({
             this.stepThree=false
             this.stepTwo=false
             this.stepOne=false
+            this.barActiveThree=true
 
 
         },
@@ -81,6 +82,7 @@ const app = new Vue({
             this.stepThree=false
             this.stepTwo=false
             this.stepOne=false
+            this.barActiveThree=false
 
         },
         callSixStep(){
