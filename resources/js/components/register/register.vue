@@ -14,22 +14,24 @@
 							</li>
 							
 							<li>
-								<div class="step-circle">
+								<div :class="{'step-circle':true,'active':$root.$data.stepCircleActiveTwo}">
+									
 									<i class="far fa-newspaper"></i>
 									<!--<img src="/site-images/icons/qualification.PNG" alt="" class="img-responsive">-->
 								</div>
 								<div>Qualification</div>
 								<div :class="{'bar':true, 'bar-active':$root.$data.barActiveTwo}"></div>
+								
 							</li>
 							<li>
-								<div class="step-circle">
+								<div :class="{'step-circle':true,'active':$root.$data.stepCircleActiveThree}">
 									<i class="fas fa-book"></i>
 								</div>
 								<div>Tutoring Subjects</div>
 								<div :class="{'bar':true, 'bar-active':$root.$data.barActiveThree}"></div>
 							</li>
 							<li>
-								<div class="step-circle">
+								<div :class="{'step-circle':true,'active':$root.$data.stepCircleActiveFour}">
 									<i class="far fa-credit-card"></i>
 								</div>
 								<div>Get Paid</div>
