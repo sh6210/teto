@@ -40,8 +40,8 @@
 				</div>
 				<step1></step1>
 				<step2></step2>
-				<step3 :qualifications="qualifications"></step3>
-				<step4></step4>
+				<step3 :qualifications="qualifications" :subjects="subjects"></step3>
+				<step4 :teaches="teaches"></step4>
 				<step5></step5>
 				<step6></step6>
 			</div>
@@ -62,7 +62,9 @@
         components:{step1, step2,step3,step4,step5,step6},
 		data(){
             return {
-                qualifications:[]
+                qualifications:[],
+				subjects:[],
+				teaches:[]
 			}
 		}
     }

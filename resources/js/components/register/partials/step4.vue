@@ -2,39 +2,7 @@
 	<div v-if="$root.stepFour">
 		<div class="step-form">
 				<p class="academic pb-3">What subject would you like to teach?</p>
-				<div class="row">
-					<div class="col-md-6">
-						<div class="form-group">
-							<label >Subject</label>
-							<select  class= "form-control">
-								<option>Math, English</option>
-							</select>
-						</div>
-					</div>
-					<div class="col-md-2">
-						<div class="form-group">
-							<label >Level</label>
-							<input type="text" name="level" class="form-control" placeholder="GCSE">
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="form-group">
-							<label >Price</label>
-							<input type="number" name="price" class="form-control" placeholder="AED 30">
-						</div>
-					</div>
-				
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<div class="form-group">
-							<span class="another-qualification">
-								<i class="fas fa-plus-circle"></i>
-								Add Subject
-							</span>
-						</div>
-					</div>
-				</div>
+				<teach :teaches="teaches"></teach>
 				<p class="academic pb-3"> General Availability</p>
 				<div class="row">
 					<div class="col-md-12">
@@ -108,8 +76,12 @@
 </template>
 
 <script>
+	import teach from './teach.vue'
+
     export default {
-        name: "step4"
+        name: "step4",
+		props:['teaches'],
+		components:{teach}
     }
 </script>
 

@@ -6,8 +6,15 @@
  */
 
 require('./bootstrap');
+
 window.Vue = require('vue');
-import Vue from 'vue'
+
+import VueTheMask from 'vue-the-mask'
+import vSelect from 'vue-select'
+
+Vue.use(VueTheMask)
+
+Vue.component('v-select', vSelect)
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
 Vue.component('site-header', require('./components/site-header.vue'));
 Vue.component('site-footer', require('./components/site-footer.vue'));

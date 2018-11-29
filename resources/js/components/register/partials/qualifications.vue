@@ -23,19 +23,20 @@
             <div class="col-md-4">
                 <div class="form-group">
                     <label for="Year">Year</label>
-                    <input type="text"  class= "form-control"
+                    <input class= "form-control"
                            style=" width: 40%;"
                            placeholder="yyyy"
                            v-model="year"
+                           v-mask="'####'"
+                           type="text"
                            name="year"
-                           id="year"
-                           >
+                           id="year"/>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12">
-                <div class="form-group pb-3" @click="addQualifications()">
+                <div class="form-group pb-3" @click="addQualifications()" style="cursor:pointer;">
                     <!--<input type="radio"  name="" >-->
                     <span class="another-qualification">
                         <i class="fas fa-plus-circle"></i>
@@ -66,50 +67,4 @@
         </div>
     </div>
 </template>
-<script>
-    export default {
-        props:['qualifications'],
-        data(){
-            return {
-                school_university:'',
-                qualification:'',
-                year:'',
-            }
-        },
-        methods:{
-
-            deleteQualification(index){
-                this.qualifications.splice(index, 1)
-            },
-
-            editQualification(index){
-                this.school_university = this.qualifications[index].school_university
-                this.qualification = this.qualifications[index].qualification
-                this.year = this.qualifications[index].year
-                this.deleteQualification(index)
-                $('#qualification').focus()
-            },
-
-            addQualifications(){
-
-                if(!this.qualification && !this.school_university && !this.year ){
-                    alert( 'qualification is missing' )
-                    return null
-                }
-
-                this.qualifications.push({
-                    school_university:this.school_university,
-                    qualification:this.qualification,
-                    year:this.year,
-                })
-
-                this.school_university=''
-                this.qualification=''
-                this.year=''
-
-                $('#qualification').focus()
-
-            }
-        }
-    }
-</script>
+<script src="./js/qualification.js"></script>

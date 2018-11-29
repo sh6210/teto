@@ -251,7 +251,16 @@ button.btn:focus,.btn-outline-secondary:focus, .btn-outline-secondary.focus,.for
   }
 }
 
-
-
-
-
+.v-select .dropdown-toggle{
+  padding: 0 !important;
+  border-radius: 6px !important;
+}
+.v-select input[type=search], .v-select input[type=search]:focus{
+  margin: 0 !important;
+}
+.v-select .vs__actions {
+  display: none !important;
+}
+.dropdown-toggle::after{
+  display: none !important;
+}
