@@ -42,7 +42,7 @@
 					<step1></step1>
 					<step2></step2>
 					<step3 :qualifications="qualifications" :subjects="subjects"></step3>
-					<step4 :teaches="teaches"></step4>
+					<step4 :teaches="teaches" :selectedDates="selectedDates"></step4>
 					<step5></step5>
 					<step6></step6>
 				</div>
@@ -65,7 +65,12 @@
             return {
                 qualifications:[],
 				subjects:[],
-				teaches:[]
+				teaches:[],
+                selectedDates:[
+                    {morning:['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun']},
+                    {afternoon:['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun']},
+                    {evening:['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun']}
+				]
 			}
 		}
     }

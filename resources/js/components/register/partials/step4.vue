@@ -22,39 +22,24 @@
 							</tr>
 							</thead>
 							<tbody>
-							<tr>
-								<td>Morning</td>
-								<td for="mondayMorning" :class="{'day':true, 'checkMark':$root.$data.check }" @click.prevent="$root.callMondayMorning">
-									<!--<label  class="calenderItemBox" > monday </label>-->
-									<input id="mondayMorning" type="checkbox" class="calenderCheckBox" v-model="mondayMorning">
+
+							<tr v-for="(timeSegment, timeSegmentIndex) in dates">
+
+								<td>
+									{{ Object.keys(timeSegment)[0] }}
 								</td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td class=""></td>
-								<td class=""></td>
+
+								<td v-for="(nameOfDays, dayIndex) in timeSegment[Object.keys(timeSegment)]">
+									{{nameOfDays}}
+									<input type="checkbox" v-model="selectedDates[timeSegmentIndex][dayIndex]"
+										   :class="{
+									    'day':true,
+									    'checkMark': selectedDates[timeSegmentIndex][dayIndex]
+									}
+									">
+								</td>
 							</tr>
-							<tr>
-								<td>Afternoon</td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>Evening</td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
+
 							</tbody>
 						</table>
 					
@@ -83,10 +68,20 @@
 <script>
     import teach from './teach.vue'
 
+
     export default {
         name: "step4",
-        props: ['teaches'],
-        components: {teach}
+        props: ['teaches', 'selectedDates'],
+        components: {teach},
+		data(){
+            return {
+                dates:[
+                    {morning:['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun']},
+                    {afternoon:['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun']},
+                    {evening:['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun']}
+                ]
+			}
+		}
     }
 </script>
 
