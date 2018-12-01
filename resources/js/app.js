@@ -42,13 +42,30 @@ const app = new Vue({
             stepCircleActiveTwo:false,
             stepCircleActiveThree:false,
             stepCircleActiveFour:false,
-            circleActive:false,
+            circleActive:true,
             circleActiveTwo:false,
             circleActiveThree:false,
             circleActiveFour:false,
+            check:false,
+            counter:0
         }
     },
     methods:{
+        callMondayMorning(){
+
+          if(mondayMorning){
+             this.counter++;
+                  if(this.counter % 2!=0)
+                  {
+                      this.check=true
+                  }
+                  else{
+                      this.check=false
+                  }
+                  console.log(this.counter)
+          }
+
+        },
         callSecondStepModal(){
             this.stepTwo=true
         },
@@ -69,7 +86,7 @@ const app = new Vue({
             this.barActiveTwo=false
             this.stepCircleActiveTwo=false
             this.circleActiveTwo=false
-            this.circleActive=false
+            this.circleActive=true
         },
         backThirdPage(){
             this.stepThree=true

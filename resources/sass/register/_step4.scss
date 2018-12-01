@@ -1,4 +1,11 @@
-.checkMark{
+.calenderCheckBox{
+  display: none;
+}
+.calenderItemBox{
+  background: red;
+}
+
+.checkMark,.day.checkMark{
     background: #FFFFFF!important;
       &:after{
         content: url(../../../public/site-images/icons/check.png);

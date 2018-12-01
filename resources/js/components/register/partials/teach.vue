@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
-                    <label >Tech</label>
+                    <label >Teach</label>
                     <v-select
                             taggable
                             name="subject"
@@ -32,7 +32,7 @@
                 <div class="form-group">
                     <span class="another-qualification" @click="addTeach()" style="cursor: pointer">
                         <i class="fas fa-plus-circle"></i>
-                        Add Tech
+                        Add Teach
                     </span>
                 </div>
             </div>

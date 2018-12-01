@@ -4,10 +4,10 @@
 		   <div class="modalContainer">
 			   <div class="innerArea">
 				   <div class="form-group">
-					   <label >Please enter yout phone verifacition number</label>
+					   <label >Please enter your phone verification number</label>
 					   <input class="form-control" type="text" name="" id="" placeholder="X X X X X">
 				   </div>
-				   <p>Did you receive phone verifacation number ? <a href="" class="link"> send again</a></p>
+				   <p>Did you receive phone verification number ? <a href="" class="link"> send again</a></p>
 				   <div class="modalControl">
 					   <button data-v-07636019="" class="back-button" @click.prevent="$root.closeModal">Back</button>
 					   <button data-v-07636019="" class="continue-button" @click.prevent="$root.callThirdStep">Continue</button>
