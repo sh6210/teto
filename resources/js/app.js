@@ -34,7 +34,11 @@ const app = new Vue({
             stepSix:false,
             stepCircleActiveTwo:false,
             stepCircleActiveThree:false,
-            stepCircleActiveFour:false
+            stepCircleActiveFour:false,
+            circleActive:false,
+            circleActiveTwo:false,
+            circleActiveThree:false,
+            circleActiveFour:false,
         }
     },
     methods:{
@@ -47,6 +51,8 @@ const app = new Vue({
              this.stepOne=false
              this.barActive=true
             this.stepCircleActiveTwo=true
+            this.circleActiveTwo=true
+            this.circleActive=true
 
         },
         backSecondPage(){
@@ -55,6 +61,8 @@ const app = new Vue({
             this.stepOne=false
             this.barActiveTwo=false
             this.stepCircleActiveTwo=false
+            this.circleActiveTwo=false
+            this.circleActive=false
         },
         backThirdPage(){
             this.stepThree=true
@@ -63,6 +71,8 @@ const app = new Vue({
             this.stepFour=false
             this.barActiveTwo=false
             this.stepCircleActiveThree=false
+            this.circleActiveThree=false
+
         },
         callFourStep(){
             this.stepFour=true
@@ -71,6 +81,9 @@ const app = new Vue({
             this.stepOne=false
             this.barActiveTwo=true
             this.stepCircleActiveThree=true
+            this.circleActiveThree=true
+            this.circleActiveTwo=true
+
         },
         callFiveStep(){
 
@@ -81,6 +94,7 @@ const app = new Vue({
             this.stepOne=false
             this.barActiveThree=true
             this.stepCircleActiveFour=true
+            this.circleActiveFour=true
 
 
         },
@@ -93,6 +107,9 @@ const app = new Vue({
             this.stepOne=false
             this.barActiveThree=false
             this.stepCircleActiveFour=false
+            this.circleActiveFour=false
+
+
 
         },
         callSixStep(){

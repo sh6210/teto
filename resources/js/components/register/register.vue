@@ -6,6 +6,7 @@
 					<div class="step-main-top">
 						<ul>
 							<li>
+								<div :class="{'circleCheck':true, 'active' :$root.$data.circleActive}"> </div>
 								<div class="step-circle active">
 									<i class="far fa-user"></i>
 								</div>
@@ -14,16 +15,15 @@
 							</li>
 							
 							<li>
+								<div :class="{'circleCheck':true,'active' :$root.$data.circleActiveTwo}"> </div>
 								<div :class="{'step-circle':true,'active':$root.$data.stepCircleActiveTwo}">
-									
 									<i class="far fa-newspaper"></i>
-									<!--<img src="/site-images/icons/qualification.PNG" alt="" class="img-responsive">-->
 								</div>
 								<div>Qualification</div>
 								<div :class="{'bar':true, 'bar-active':$root.$data.barActiveTwo}"></div>
-								
 							</li>
 							<li>
+								<div :class="{'circleCheck':true,'active' :$root.$data.circleActiveThree}"> </div>
 								<div :class="{'step-circle':true,'active':$root.$data.stepCircleActiveThree}">
 									<i class="fas fa-book"></i>
 								</div>
@@ -31,6 +31,7 @@
 								<div :class="{'bar':true, 'bar-active':$root.$data.barActiveThree}"></div>
 							</li>
 							<li>
+								<div :class="{'circleCheck':true,'active' :$root.$data.circleActiveFour}"> </div>
 								<div :class="{'step-circle':true,'active':$root.$data.stepCircleActiveFour}">
 									<i class="far fa-credit-card"></i>
 								</div>

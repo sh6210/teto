@@ -6,6 +6,8 @@
 @import "step5";
 @import "step6";
 
+
+
 .bar{
   height: 4px;
   width: 117%;
@@ -85,12 +87,44 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-      position: relative;
+        position: relative;
+          .circleCheck{
+            height: 27px;
+            width: 27px;
+            border-radius: 100%;
+            background: #222642;
+            position: absolute;
+            z-index: 1;
+            border: 2px solid white;
+            top: -4px;
+            left: 86px;
+            color: #0aea68;
+            opacity: 0;
+            font-size: 16px;
+            font-weight: bold;
+            transform: rotate(9deg);
+            &:after{
+              content:'\2713';
+              height:auto;
+              width:100%;
+              border-radius: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              position: absolute;
+              top: -4px;
+            }
+            &.active{
+              opacity: 1!important;
+            }
+          }
      div{
-        color: $text-color;
-        font-size: 18px;
-        line-height: 34px;
-        font-family: 'Montserrat', sans-serif;
+       color: #44485F;
+       font-size: 18px;
+       line-height: 34px;
+       font-family: 'Montserrat', sans-serif;
+       width: 160px;
+       text-align: center;
       }
 
      .step-circle{
