@@ -26,7 +26,7 @@
 								<td>Morning</td>
 								<td for="mondayMorning" :class="{'day':true, 'checkMark':$root.$data.check }" @click.prevent="$root.callMondayMorning">
 									<!--<label  class="calenderItemBox" > monday </label>-->
-									<input id="mondayMorning" type="checkbox" class="calenderCheckBox" v-model="$root.$data.mondayMorning">
+									<input id="mondayMorning" type="checkbox" class="calenderCheckBox" v-model="mondayMorning">
 								</td>
 								<td></td>
 								<td></td>
