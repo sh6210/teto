@@ -6,8 +6,15 @@
  */
 
 require('./bootstrap');
+
 window.Vue = require('vue');
-import Vue from 'vue'
+
+import VueTheMask from 'vue-the-mask'
+import vSelect from 'vue-select'
+
+Vue.use(VueTheMask)
+
+Vue.component('v-select', vSelect)
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
 Vue.component('site-header', require('./components/site-header.vue'));
 Vue.component('site-footer', require('./components/site-footer.vue'));
@@ -43,13 +50,13 @@ const app = new Vue({
     },
     methods:{
         callSecondStepModal(){
-          this.stepTwo=true
+            this.stepTwo=true
         },
         callThirdStep(){
-             this.stepThree=true
-             this.stepTwo=false
-             this.stepOne=false
-             this.barActive=true
+            this.stepThree=true
+            this.stepTwo=false
+            this.stepOne=false
+            this.barActive=true
             this.stepCircleActiveTwo=true
             this.circleActiveTwo=true
             this.circleActive=true
@@ -113,12 +120,12 @@ const app = new Vue({
 
         },
         callSixStep(){
-               this.stepSix=true
-                this.stepOne=false
-                this.stepTwo=false
-                this.stepThree=false
-                this.stepFour=false
-                this.stepFive=false
+            this.stepSix=true
+            this.stepOne=false
+            this.stepTwo=false
+            this.stepThree=false
+            this.stepFour=false
+            this.stepFive=false
         },
         backMessege(){
             alert("You don't have any permission to go back ")
