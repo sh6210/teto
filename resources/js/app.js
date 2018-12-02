@@ -51,21 +51,7 @@ const app = new Vue({
         }
     },
     methods:{
-        callMondayMorning(){
 
-          if(mondayMorning){
-             this.counter++;
-                  if(this.counter % 2!=0)
-                  {
-                      this.check=true
-                  }
-                  else{
-                      this.check=false
-                  }
-                  console.log(this.counter)
-          }
-
-        },
         callSecondStepModal(){
             this.stepTwo=true
         },

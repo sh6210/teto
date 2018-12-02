@@ -4,17 +4,31 @@
 .calenderItemBox{
   background: red;
 }
+.check-data{
+  padding: 0!important;
+}
+.check-box-adjustment.day{
+  -webkit-appearance: none;
+  border:0;
+  height:50px;
+  display: block;
+  width: 100%;
+  outline: 0;
+  position: relative;
+  margin: 0 auto;
+  border-radius: 0;
+  background: rgba(221, 240, 255, 0.25) !important;
+}
 
 .checkMark,.day.checkMark{
     background: #FFFFFF!important;
       &:after{
         content: url(../../../public/site-images/icons/check.png);
-        height: 25px;
-        width: 25px;
+        height:100%;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        transform: translateX(14px);
       }
 }
 .table.customTable{
@@ -40,7 +54,9 @@
           color:#222642;
           text-align: center;
           font-family: 'Montserrat', sans-serif;
-
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
       }
     }

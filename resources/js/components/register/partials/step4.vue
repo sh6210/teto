@@ -10,28 +10,26 @@
 					<div class="form-group">
 						<table class="table customTable">
 							<thead>
-							<tr>
-								<th></th>
-								<th>Mon</th>
-								<th>Tue</th>
-								<th>Wed</th>
-								<th>Thu</th>
-								<th>Fri</th>
-								<th>Sat</th>
-								<th>Sun</th>
-							</tr>
+									<tr>
+										<th></th>
+										<th>Mon</th>
+										<th>Tue</th>
+										<th>Wed</th>
+										<th>Thu</th>
+										<th>Fri</th>
+										<th>Sat</th>
+										<th>Sun</th>
+									</tr>
 							</thead>
 							<tbody>
 
 							<tr v-for="(timeSegment, timeSegmentIndex) in dates">
-
 								<td>
 									{{ Object.keys(timeSegment)[0] }}
 								</td>
-
-								<td v-for="(nameOfDays, dayIndex) in timeSegment[Object.keys(timeSegment)]">
-									{{nameOfDays}}
-									<input type="checkbox" v-model="selectedDates[timeSegmentIndex][dayIndex]"
+								<td v-for="(nameOfDays, dayIndex) in timeSegment[Object.keys(timeSegment)]" class="check-data">
+									<!--{{nameOfDays}}-->
+									<input class="check-box-adjustment" type="checkbox" v-model="selectedDates[timeSegmentIndex][dayIndex]"
 										   :class="{
 									    'day':true,
 									    'checkMark': selectedDates[timeSegmentIndex][dayIndex]
