@@ -54,7 +54,7 @@
                             <i class="fa fa-times"></i>
                         </button>
                         <button
-                                class="btn btn-sm btn-success float-right"
+                                class="btn btn-sm btn-success float-right edit-btn"
                                 @click="editQualification(index)">
                             <i class="fa fa-pen"></i>
                         </button>

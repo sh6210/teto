@@ -42,7 +42,7 @@
                             <i class="fa fa-times"></i>
                         </button>
                         <button
-                                class="btn btn-sm btn-success float-right"
+                                class="btn btn-sm btn-success float-right edit-btn"
                                 @click="editSubject(index)">
                                     <i class="fa fa-pen"></i>
                         </button>
