@@ -20,7 +20,11 @@
 				<div class="col-md-6">
 					<div class="form-group">
 						<label >Gender: Male/Female</label>
-						<input type="text"  class= "form-control"  placeholder="Male/Female">
+						<select name="gender" class="form-control">
+							<option value="male">male</option>
+							<option value="female">female</option>
+						</select>
+						<!--<input type="text"  class= "form-control"  placeholder="Male/Female">-->
 					</div>
 				</div>
 				<div class="col-md-6">

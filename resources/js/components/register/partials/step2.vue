@@ -5,7 +5,7 @@
 			   <div class="innerArea">
 				   <div class="form-group">
 					   <label >Please enter your phone verification number</label>
-					   <input class="form-control" type="text" name="" id="" placeholder="X X X X X">
+					   <input class="form-control" type="number" name="" id="" placeholder="X X X X X">
 				   </div>
 				   <p>Did you receive phone verification number ? <a href="" class="link"> send again</a></p>
 				   <div class="modalControl">

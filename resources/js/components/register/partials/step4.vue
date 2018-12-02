@@ -48,8 +48,9 @@
 				<div class="col-md-12">
 					<div class="form-group">
 						<p class="academic pb-3">How many language do you speak: English/Arabic/Mandarine</p>
-						<input type="text" name="language" placeholder="English, Arabic, French" class="form-control"
-						       style="width:50%;">
+						<v-select multiple v-model="language" name="language" multiple :options="['arabic', 'english']"></v-select>
+						<!--<input type="text" name="language" placeholder="English, Arabic, French" class="form-control"-->
+						       <!--style="width:50%;">-->
 					</div>
 				</div>
 				<div class="col-md-12">
@@ -73,6 +74,7 @@
         components: {teach},
 		data(){
             return {
+                language:[],
                 dates:[
                     {morning:['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun']},
                     {afternoon:['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun']},

@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="array-input">
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
@@ -16,13 +16,23 @@
             <div class="col-md-2">
                 <div class="form-group">
                     <label >Level</label>
-                    <input type="text" name="level" v-model="level" class="form-control" placeholder="GCSE">
+                    <input type="text"
+                           name="level"
+                           v-model="level"
+                           placeholder="GCSE"
+                           class="form-control"
+                    >
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="form-group">
                     <label >Price</label>
-                    <input type="number" name="price" v-model="price" class="form-control" placeholder="AED 30">
+                    <input type="number"
+                           name="price"
+                           v-model="price"
+                           placeholder="AED 30"
+                           class="form-control"
+                    >
                 </div>
             </div>
 
@@ -45,8 +55,9 @@
                             @click="deleteTeach(index)">
                         <i class="fa fa-times"></i>
                     </button>
+
                     <button
-                            class="btn btn-sm btn-success float-right"
+                            class="btn btn-sm btn-success float-right edit-btn"
                             @click="editTeach(index)">
                         <i class="fa fa-pen"></i>
                     </button>
