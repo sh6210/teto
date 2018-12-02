@@ -52,6 +52,34 @@ const app = new Vue({
     },
     methods:{
 
+        lastStep(){
+          this.circleActiveFour=false
+            this.stepCircleActiveFour=false
+              this.barActiveThree=false
+            this.backFifthPage()
+        },
+        thirdStep(){
+            this.circleActiveFour=false
+            this.stepCircleActiveFour=false
+            this.barActiveThree=false
+            this.barActiveTwo=false
+            this.circleActiveThree=false
+            this.stepCircleActiveThree=false
+            this.backFourthPage()
+        },
+        secondStep(){
+            this.circleActiveTwo=false
+            this.circleActiveThree=false
+            this.circleActiveFour=false
+            this.barActive=false
+            this.barActiveTwo=false
+            this.barActiveThree=false
+            this.stepCircleActiveTwo=false
+            this.stepCircleActiveThree=false
+            this.stepCircleActiveFour=false
+            this.backSecondPage()
+        },
+
         callSecondStepModal(){
             this.stepTwo=true
         },
@@ -105,6 +133,9 @@ const app = new Vue({
             this.barActiveThree=true
             this.stepCircleActiveFour=true
             this.circleActiveFour=true
+            this.stepCircleActiveThree=true
+            this.circleActiveThree=true
+            this.barActiveTwo=true
 
 
         },

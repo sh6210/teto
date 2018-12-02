@@ -16,7 +16,7 @@
 							
 							<li>
 								<div :class="{'circleCheck':true,'active' :$root.$data.circleActiveTwo}"> </div>
-								<div :class="{'step-circle':true,'active':$root.$data.stepCircleActiveTwo}">
+								<div :class="{'step-circle':true,'active':$root.$data.stepCircleActiveTwo}" @click.prevent="$root.secondStep">
 									<i class="far fa-newspaper"></i>
 								</div>
 								<div>Qualification</div>
@@ -24,14 +24,14 @@
 							</li>
 							<li>
 							<div :class="{'circleCheck':true,'active' :$root.$data.circleActiveThree}"> </div>
-								<div :class="{'step-circle':true,'active':$root.$data.stepCircleActiveThree}">
+								<div :class="{'step-circle':true,'active':$root.$data.stepCircleActiveThree} " @click.prevent="$root.thirdStep">
 									<i class="fas fa-book"></i>
 								</div>
 								<div>Tutoring Subjects</div>
 								<div :class="{'bar':true, 'bar-active':$root.$data.barActiveThree}"></div>
 							</li>
 							<li><div :class="{'circleCheck':true,'active' :$root.$data.circleActiveFour}"> </div>
-								<div :class="{'step-circle':true,'active':$root.$data.stepCircleActiveFour}">
+								<div :class="{'step-circle':true,'active':$root.$data.stepCircleActiveFour}" @click.prevent="$root.lastStep">
 									<i class="far fa-credit-card"></i>
 								</div>
 								<div>Get Paid</div>
