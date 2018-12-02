@@ -14,15 +14,14 @@
 								<div :class="{'bar':true, 'bar-active':$root.$data.barActive}"></div>
 							</li>
 							
-							<li><div :class="{'circleCheck':true,'active' :$root.$data.circleActiveTwo}"> </div>
+							<li>
+								<div :class="{'circleCheck':true,'active' :$root.$data.circleActiveTwo}"> </div>
 								<div :class="{'step-circle':true,'active':$root.$data.stepCircleActiveTwo}">
-									
 									<i class="far fa-newspaper"></i>
-									
 								</div>
 								<div>Qualification</div>
 								<div :class="{'bar':true, 'bar-active':$root.$data.barActiveTwo}"></div>
-								</li>
+							</li>
 							<li>
 							<div :class="{'circleCheck':true,'active' :$root.$data.circleActiveThree}"> </div>
 								<div :class="{'step-circle':true,'active':$root.$data.stepCircleActiveThree}">
